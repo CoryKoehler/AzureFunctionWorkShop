@@ -1,0 +1,5 @@
+az login
+az group create --name azws --location eastus
+az storage account create --name azworkshopstorage --resource-group azws --location eastus --sku Standard_RAGRS --kind StorageV2
+az monitor app-insights component create --app azWorkShop --location eastus --kind web -g azws
+az functionapp create -g azws --consumption-plan-location eastus --name azWorkShopFunctions --runtime dotnet --storage-account azworkshopstorage --app-insights azWorkShop --functions-version 3
