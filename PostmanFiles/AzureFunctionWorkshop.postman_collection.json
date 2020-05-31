@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "19a7cdf5-2241-4bc5-928a-40158be1cd7c",
+		"name": "AzureFunctionWorkshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get things",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/things",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"things"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get more things",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/things/good?more=no",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"things",
+						"good"
+					],
+					"query": [
+						{
+							"key": "more",
+							"value": "no"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
