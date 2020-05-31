@@ -2,4 +2,10 @@ az login
 az group create --name azws --location eastus
 az storage account create --name azworkshopstorage --resource-group azws --location eastus --sku Standard_RAGRS --kind StorageV2
 az monitor app-insights component create --app azWorkShop --location eastus --kind web -g azws
-az functionapp create -g azws --consumption-plan-location eastus --name azWorkShopFunctions --runtime dotnet --storage-account azworkshopstorage --app-insights azWorkShop --functions-version 3
+az functionapp create -g azws --consumption-plan-location eastus --name azWorkShopFunctions --runtime dotnet \
+    --storage-account azworkshopstorage --app-insights azWorkShop --functions-version 3
+az eventgrid domain create -g azws --name azworkshop -l eastus
+az eventgrid domain topic create -g azws --domain-name azworkshop --name azworkshoptopic1
+az eventgrid event-subscription create --name azworkshopsub1 \
+    --source-resource-id "/subscriptions/redacted/resourceGroups/azws/providers/Microsoft.EventGrid/domains/azworkshop/topics/azworkshoptopic1" \
+    --endpoint https://azworkshop.eastus-1.eventgrid.azure.net/api/events

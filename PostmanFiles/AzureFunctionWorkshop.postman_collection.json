@@ -51,6 +51,119 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get things from azure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://azworkshopfunctions.azurewebsites.net/api/things?code=1wYinreM9HllJGKR6jZsxMadpy4XO6VFltHuHKtxnipz5/gXtfOr0g==",
+					"protocol": "https",
+					"host": [
+						"azworkshopfunctions",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"things"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "1wYinreM9HllJGKR6jZsxMadpy4XO6VFltHuHKtxnipz5/gXtfOr0g=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get more things from azure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "azworkshopfunctions.azurewebsites.net/api/things/good?more=yes&code=b5TziTRh1UESQpU3a9iGLgWkc3NsSCqA8ZY3xjFdZfoFatmVhCbuCg==",
+					"host": [
+						"azworkshopfunctions",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"things",
+						"good"
+					],
+					"query": [
+						{
+							"key": "more",
+							"value": "yes"
+						},
+						{
+							"key": "code",
+							"value": "b5TziTRh1UESQpU3a9iGLgWkc3NsSCqA8ZY3xjFdZfoFatmVhCbuCg=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post to eventgrid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/eventgrid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"eventgrid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post to event grid on azure",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "azworkshopfunctions.azurewebsites.net/api/eventgrid?code=oTHYuiVfaNEZr6a7aT/WK4hLUW6mLuo2YrD65JzmbOX6EsqR3N08Zw==",
+					"host": [
+						"azworkshopfunctions",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"eventgrid"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "oTHYuiVfaNEZr6a7aT/WK4hLUW6mLuo2YrD65JzmbOX6EsqR3N08Zw=="
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
