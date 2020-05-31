@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.30114.128
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpGetFunction", "HttpGetFunction\HttpGetFunction.csproj", "{5FEBDDBB-E7E3-46A8-BE4B-1AA09D828ABE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventGridFunction", "EventGridFunction\EventGridFunction.csproj", "{D1CE4C5F-C9EF-4439-A364-F02A2270E4F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PostmanFiles", "PostmanFiles", "{C0DA18D5-4E2B-4D25-9E81-ED79E1D0887A}"
+	ProjectSection(SolutionItems) = preProject
+		PostmanFiles\AzureFunctionWorkshop.postman_collection.json = PostmanFiles\AzureFunctionWorkshop.postman_collection.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{5FEBDDBB-E7E3-46A8-BE4B-1AA09D828ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FEBDDBB-E7E3-46A8-BE4B-1AA09D828ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FEBDDBB-E7E3-46A8-BE4B-1AA09D828ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1CE4C5F-C9EF-4439-A364-F02A2270E4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1CE4C5F-C9EF-4439-A364-F02A2270E4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1CE4C5F-C9EF-4439-A364-F02A2270E4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1CE4C5F-C9EF-4439-A364-F02A2270E4F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
